@@ -82,6 +82,9 @@ body {
 .green {
   background-color: rgba(132, 238, 199, 0.8);
 }
+.forestgreen{
+  background-color: #228B22;
+}
 .blue {
   background-color: #40E0D0 ;
 }
@@ -97,6 +100,4 @@ body {
 .blendPG{
   background: linear-gradient(to right, rgba(209, 154, 209, 0.8), rgba(132, 238, 199, 0.8));
 }
-.forestgreen{
-  background-color: #228B22;
-}
+

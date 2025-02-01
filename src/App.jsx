@@ -34,7 +34,7 @@ const colorSetId= "color-sets";
     ["lime", "navy"],
     ["gold", "brown"],
     ["violet", "coral"],
-    ["silver", "forest green"],
+    ["silver", "forestgreen"],
     ["turquoise", "purple"],
     ["skyblue", "darkred"],  
     ["salmon", "indigo"],    

@@ -3,6 +3,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  background-color: #f4feff;
 }
 
 #app {
@@ -13,28 +14,43 @@ body {
 }
 
 #container {
+  padding-top: 5rem;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 #navbar {
-  flex-grow: 1;
-  max-height: 10%;
-  min-height: 40px;
+  position: fixed;  /* Fix it to the top */
+  top: 0;           /* Stick to the top of the viewport */
+  left: 0;
+  width: 100%;      /* Full width */
+  max-height: 5rem;
+  min-height: 3em;
   background-color: #222222;
   color: white;
   display: flex;
   align-items: center;
+  padding: 10px;
+  z-index: 1000;    /* Ensure it's above other elements */
 }
 
 #navbar div {
   padding: 5px;
 }
 
+#color-sets {
+  margin-top: 6rem; /* Pushes content down to prevent overlap */
+  padding-top: 1rem;
+}
+
 #colors-list {
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 5rem;
 }
 
 #colors-list div {
@@ -42,7 +58,11 @@ body {
   width: 100px;
   border-radius: 50%;
   margin-top: 40px;
-  transition: all 1s ease;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#colors-list div:hover {
+  transform: scale(1.2);
 }
 
 .selected {
@@ -74,6 +94,9 @@ body {
 .white {
   background-color: #ffffff;
 }
-.gVGradient{
+.blendPG{
   background: linear-gradient(to right, rgba(209, 154, 209, 0.8), rgba(132, 238, 199, 0.8));
+}
+.forestgreen{
+  background-color: #228B22;
 }

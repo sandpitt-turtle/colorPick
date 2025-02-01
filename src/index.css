@@ -21,10 +21,10 @@ body {
 }
 
 #navbar {
-  position: fixed;  /* Fix it to the top */
-  top: 0;           /* Stick to the top of the viewport */
+  position: fixed;  
+  top: 0;           
   left: 0;
-  width: 100%;      /* Full width */
+  width: 100%;      
   max-height: 5rem;
   min-height: 3em;
   background-color: #222222;
@@ -32,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  z-index: 1000;    /* Ensure it's above other elements */
+  z-index: 1000;   
 }
 
 #navbar div {
@@ -40,7 +40,7 @@ body {
 }
 
 #color-sets {
-  margin-top: 6rem; /* Pushes content down to prevent overlap */
+  margin-top: 6rem; 
   padding-top: 1rem;
 }
 
